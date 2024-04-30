@@ -152,6 +152,13 @@ yarn make
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/Stake2">
+            <img src="https://avatars.githubusercontent.com/u/39934220?v=4" width="100;" alt="Stake2"/>
+            <br />
+            <sub><b>Stake2</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/eltociear">
             <img src="https://avatars.githubusercontent.com/u/22633385?v=4" width="100;" alt="eltociear"/>
             <br />
@@ -163,13 +170,6 @@ yarn make
             <img src="https://avatars.githubusercontent.com/u/91623880?v=4" width="100;" alt="Netflixyapp"/>
             <br />
             <sub><b>Netflixy</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/Stake2">
-            <img src="https://avatars.githubusercontent.com/u/39934220?v=4" width="100;" alt="Stake2"/>
-            <br />
-            <sub><b>Stake2</b></sub>
         </a>
     </td></tr>
 </table>
