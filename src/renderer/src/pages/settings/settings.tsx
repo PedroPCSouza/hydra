@@ -11,6 +11,7 @@ export function Settings() {
     downloadNotificationsEnabled: false,
     repackUpdatesNotificationsEnabled: false,
     telemetryEnabled: false,
+    realDebridApiToken: null,
   });
 
   const { t } = useTranslation("settings");
@@ -27,6 +28,7 @@ export function Settings() {
         repackUpdatesNotificationsEnabled:
           userPreferences?.repackUpdatesNotificationsEnabled ?? false,
         telemetryEnabled: userPreferences?.telemetryEnabled ?? false,
+        realDebridApiToken: userPreferences.realDebridApiToken,
       });
     });
   }, []);
@@ -106,6 +108,14 @@ export function Settings() {
           onChange={() =>
             updateUserPreferences("telemetryEnabled", !form.telemetryEnabled)
           }
+        />
+
+        <TextField
+          label={t("real_debrid_api_token")}
+          value={form.realDebridApiToken ?? ""}
+          onChange={(event) => {
+            updateUserPreferences("realDebridApiToken", event.target.value);
+          }}
         />
       </div>
     </section>
