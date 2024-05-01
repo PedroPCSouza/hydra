@@ -7,82 +7,82 @@
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/hydralauncher/hydra/build.yml)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/hydralauncher/hydra)
 
-Hydra is a game launcher with its own embedded bittorrent client and a self-managed repack scraper.
-The launcher is written in TypeScript (Electron) and Python, which handles the torrenting system by using [libtorrent](https://www.libtorrent.org/).
+Hydra é um inicializador de jogos com seu próprio cliente bittorrent integrado e um scraper de repack autogerenciado.
+O inicializador é escrito em TypeScript (Electron) e Python, que lida com o sistema de torrents usando [libtorrent](https://www.libtorrent.org/).
 
-![Hydra Catalogue](./docs/screenshot.png)
+![Catálogo Hydra](./docs/screenshot.png)
 
-## Installation
+## Instalação
 
-### Install Node.js
+### Instale o Node.js
 
-Ensure you have Node.js installed on your machine. If not, download and install it from [nodejs.org](https://nodejs.org/).
+Certifique-se de ter o Node.js instalado em sua máquina. Caso contrário, baixe e instale-o em [nodejs.org](https://nodejs.org/).
 
-### Install Yarn
+### Instale o Yarn
 
-Yarn is a package manager for Node.js. If you haven't installed Yarn yet, you can do so by following the instructions on [yarnpkg.com](https://classic.yarnpkg.com/lang/en/docs/install/).
+Yarn é um gerenciador de pacotes para o Node.js. Se você ainda não instalou o Yarn, você pode fazê-lo seguindo as instruções em [yarnpkg.com](https://classic.yarnpkg.com/lang/en/docs/install/) (em Inglês).
 
-### Clone the Repository
+### Clone o repositório
 
 ```bash
 git clone https://github.com/hydralauncher/hydra.git
 ```
 
-### Install Node Dependencies
+### Instale as Dependências do Node
 
-Navigate to the project directory and install the Node dependencies using Yarn:
+Navegue até o diretório do projeto e instale as dependências do Node usando o Yarn:
 
 ```bash
 cd hydra
 yarn
 ```
 
-### Install Python 3.9
+### Instale o Python 3.9
 
-Ensure you have Python installed on your machine. You can download and install it from [python.org](https://www.python.org/downloads/release/python-3919/).
+Certifique-se de ter o Python instalado em sua máquina. Você pode baixá-lo e instalá-lo em [python.org](https://www.python.org/downloads/release/python-3919/).
 
-### Install Python Dependencies
+### Instalar as Dependências do Python
 
-Install the required Python dependencies using pip:
+Instale as dependências necessárias do Python usando o pip:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Environment variables
+## Variáveis de ambiente
 
-You'll need a SteamGridDB API Key in order to fetch the game icons on installation.
-If you want to have onlinefix as a repacker you'll need to add your credentials to the .env
+Você precisará de uma chave de API do SteamGridGB para buscar os ícones de jogo na instalação.
+Se você deseja ter o onlinefix como repacker, você precisará adicionar suas credenciais no .env
 
-Once you have it, you can paste the `.env.example` file and put it on `STEAMGRIDDB_API_KEY`, `ONLINEFIX_USERNAME`, `ONLINEFIX_PASSWORD`.
+Depois de obtê-lo, você pode colar o arquivo `.env.example` e preencher os campos `STEAMGRIDDB_API_KEY`, `ONLINEFIX_USERNAME`, `ONLINEFIX_PASSWORD`.
 
-## Running
+## Executando
 
-Once you've got all things set up, you can run the following command to start both the Electron process and the bittorrent client:
+Depois de configurar tudo, você pode executar o seguinte comando para iniciar o processo Electron e o cliente bittorrent:
 
 ```bash
 yarn start
 ```
 
-## Build
+## Compilação
 
-### Build the bittorrent client
+### Construa o cliente bittorrent
 
-Build the bittorrent client by using this command:
+Construa o cliente bittorrent usando este comando:
 
 ```bash
 python torrent-client/setup.py build
 ```
 
-### Build the Electron application
+### Construa a aplicação Electron
 
-Build the Electron application by using this command:
+Construa a aplicação Electron usando este comando:
 
 ```bash
 yarn make
 ```
 
-## Contributors
+## Contribuidores
 
 <!-- readme: contributors -start -->
 <table>
@@ -152,13 +152,6 @@ yarn make
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/Stake2">
-            <img src="https://avatars.githubusercontent.com/u/39934220?v=4" width="100;" alt="Stake2"/>
-            <br />
-            <sub><b>Stake2</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/eltociear">
             <img src="https://avatars.githubusercontent.com/u/22633385?v=4" width="100;" alt="eltociear"/>
             <br />
@@ -175,6 +168,6 @@ yarn make
 </table>
 <!-- readme: contributors -end -->
 
-## License
+## Licença
 
-Hydra is licensed under the [MIT License](LICENSE).
+Hydra é licenciada sob a [Licença MIT](LICENSE).
